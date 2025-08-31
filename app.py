@@ -23,9 +23,8 @@ def expand_url(url):
     except:
         return url
 
-@app.route("/", methods=["GET", "HEAD"])
-def home():
-    return render_template("index.html")
+@app.route("/", methods=["GET", "POST", "HEAD"])
+
 
 @app.route("/upload", methods=["POST"])
 def upload():
